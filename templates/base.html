@@ -1,29 +1,30 @@
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
+!DOCTYPE html>
+<html class="h-100">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--importing Bootstrap CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--importing font awesome script-->
-    <script src="https://kit.fontawesome.com/c415ee89f4.js" crossorigin="anonymous"></script>
-    <!--Link to the Favicon for the site-->
-    <link rel="icon" href="{% static 'favicon.ico' %}">
-    <!--Link to the CSS file-->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
     <title> Rubi's Corner </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     
 </head>
 
 <body class="bg-secondary">
-    <header class="">
-        <h1 class=" ">
-            <span class="">Welcome to enjoy a good meal</span>
-            <span class="">Rubi's Corner</span>
+    <header>
+        <h1 class="site-heading text-center text-faded  d-lg-block">
+            <span class="site-heading-upper">Welcome to enjoy a good meal</span>
+            <span class="site-heading-lower">Rubi's Corner</span>
         </h1>
     </header>
 
