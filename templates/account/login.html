@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign in" %}{% endblock %}
+
+{% block content %}
+
+<section id="login" class="login-image">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 mt-5 offset-md-3">
+            <h2>{% trans "Log In" %}</h2>
+
+            <p>{% blocktrans %}Don't have any account? click
+                <a href="{{ sign_up }}">here</a> to create one. {% endblocktrans %}</p>
+        </div>
+    </div>
+
+</div>
+
+
+</section>
+
+{% endblock %}
