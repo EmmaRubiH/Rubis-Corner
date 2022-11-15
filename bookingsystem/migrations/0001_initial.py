@@ -16,22 +16,27 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Post',
+            name='SignUp',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=200, unique=True)),
-                ('slug', models.SlugField(max_length=200, unique=True)),
-                ('featured_image', cloudinary.models.CloudinaryField(default='placeholder', max_length=255, verbose_name='image')),
-                ('excerpt', models.TextField(blank=True)),
-                ('updated_on', models.DateTimeField(auto_now=True)),
-                ('content', models.TextField()),
-                ('created_on', models.DateTimeField(auto_now_add=True)),
-                ('status', models.IntegerField(choices=[(0, 'Draft'), (1, 'Published')], default=0)),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='blog_posts', to=settings.AUTH_USER_MODEL)),
-                ('likes', models.ManyToManyField(blank=True, related_name='blogpost_like', to=settings.AUTH_USER_MODEL)),
+                ('first_name', models.CharField(blank=True, max_length=60, null=True)),
+                ('last_name', models.CharField(blank=True, max_length=60, null=True)),
+                ('email_address', models.EmailField(blank=True, max_length=254, null=True)),
             ],
-            options={
-                'ordering': ['-created_on'],
-            },
+        ),
+        migrations.CreateModel(
+            name='Booking',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('name', models.CharField(blank=True, max_length=60, null=True)),
+                ('email_address', models.EmailField(blank=True, max_length=254, null=True)),
+                ('phone', models.IntegerField(blank=True, null=True)),
+                ('number_of_people', models.CharField(choices=[('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'), ('10', '10')], help_text='<br>Parties of<br>more than 10,<br>please call us on 021 4569 782', max_length=2)),
+                ('date', models.DateField()),
+                ('time', models.CharField(choices=[('12:00', '12:00'), ('12:30', '12:30'), ('13:00', '13:00'), ('13:30', '13:30'), ('14:00', '14:00'), ('14:30', '14:30'), ('15:00', '15:00'), ('15:30', '15:30'), ('16:00', '16:00'), ('16:30', '16:30'), ('17:00', '17:00'), ('17:30', '17:30'), ('18:00', '18:00'), ('18:30', '18:30'), ('19:00', '19:00'), ('19:30', '19:30'), ('20:00', '20:00'), ('20:30', '20:30'), ('21:00', '21:00')], max_length=50)),
+                ('table', models.CharField(choices=[('Window', 'WINDOW'), ('Outside', 'OUTSIDE'), ('Inside', 'INSIDE'), ('Booth', 'BOOTH')], max_length=50)),
+                ('occasion', models.CharField(choices=[('Birthday', 'BIRTHDAY'), ('Anniversary', 'ANNIVERSARY'), ('Graduation', 'GRADUATION'), ('Communion', 'COMMUNION'), ('Confirmation', 'CONFIRMATION'), ('Christening', 'CHRISTENING'), ('Date Night', 'DATE NIGHT'), ('Friends Night', 'FRIENDS NIGHT'), ('None', 'None')], max_length=100)),
+                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='user_bookings', to=settings.AUTH_USER_MODEL)),
+            ],
         ),
     ]
