@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import sys
 import dj_database_url
 from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
@@ -29,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = os.environ.get("DEBUG")
 
 ALLOWED_HOSTS = ['rubiscorner.herokuapp.com', 'localhost']
 
@@ -113,18 +112,16 @@ WSGI_APPLICATION = 'rubiscorner.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-if 'test' in sys.argv:
-    # Database for testing
+if "DATABASE_URL" in os.environ:
     DATABASES = {
-     'default': {
-          'ENGINE': 'django.db.backends.sqlite3',
-          'NAME': BASE_DIR / 'db.sqlite3',
-      }
+        "default": dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-
 else:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        }
     }
 
 
