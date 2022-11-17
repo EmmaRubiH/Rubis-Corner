@@ -12,13 +12,13 @@
 }
 
 body {
-    background-color: #D8D5D2;
+    background-color: rgb(255, 255, 255);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 .bg-light {
-    background-color: #CFCECD!important;
+    background-color: rgb(255, 255, 255)!important;
 }
 
 body {
@@ -356,4 +356,22 @@ div {
 }
 .rounded {
     border-radius: 0.25rem !important;
+}
+
+/* booking page */
+
+.book_a_table {
+    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1668691179/Rubis/coffee-bild_tpy339.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.row {
+    background-color: rgba(86, 48, 5, .4);
+}
+
+.booking_container {
+    width: 800px;
+    height: auto;
+
 }
