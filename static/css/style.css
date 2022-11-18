@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poiret+One&display=swap');
 
-
-
-
+body {
+    font-family: 'Montserrat';
+}
 
 .site-heading {
     margin-top: 5rem;
@@ -27,6 +28,7 @@
     display: block;
     font-size: 2rem;
     font-weight: 800;
+    font-family: 'Montserrat';
     color: #E6AA6F;
     
 }
@@ -36,205 +38,84 @@
 
 .site-heading .site-heading-lower {
     font-size: 5rem;
-    font-weight: 100;
+    font-weight: 50;
     line-height: 4rem;
+    font-family: 'Poiret One';
     color: black;
     
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-@media (min-width: 1200px) {
-    h1, .h1 {
-        font-size: 2.5rem;
-    }
-}
-
-
-h1, .h1 {
-    font-size: calc(1.375rem + 1.5vw);
 }
 
 /* navbar */
-.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-}
-@media (min-width: 1200px){
-    .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1140px;
-    }
-}
 
-@media (min-width: 992px){
-    .container-lg, .container-md, .container-sm, .container {
-        max-width: 960px;
-    }
-}
-@media (min-width: 768px){
-    .container-md, .container-sm, .container {
-        max-width: 720px;
-    }
-}
-@media (min-width: 576px){
-    .container-sm, .container {
-        max-width: 540px;
-    }
-}
-.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
-    width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;
-    
-}
-
-div {
-    display: block;
-}
-
-
-.navbar-dark .navbar-nav .nav-link {
+#navbar {
     color: whitesmoke;
 }
-@media (min-width: 992px){
-    .py-lg-4 {
-        padding-top: 1.5rem !important;
-        padding-bottom: 1.5rem !important;
-    }
-}
 
 
-@media (min-width: 992px){
-    .navbar-expand-lg {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-    }
-}
-.navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
+/* Start page/home*/
 
-nav {
-    display: block;
-}
-
-a {
-    color: black;
-    text-decoration: underline;
-}
-.page-section {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-section {
-    display: block;
-}
-@media (min-width: 992px){
-    .container-lg, .container-md, .container-sm, .container {
-        max-width: 960px;
-    }
-}
-@media (min-width: 768px) {
-    .container-md, .container-sm, .container {
-        max-width: 720px;
-    }
-}
-
-
-
-.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+#hero-outer {
+    height: 600px;
     width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem); 
-    padding-left: var(--bs-gutter-x, 0.75rem); 
-    margin-right: auto; 
-    margin-left: auto;
-}
+    overflow: hidden; 
 
-#mainNav .navbar-brand {
-    color: #e6a756;
-}
-.navbar-dark .navbar-brand {
-    color: #fff;
-}
-@media (min-width: 992px){
-    .d-lg-none {
-        display: none !important;
-    }
-}
-.text-uppercase {
-    text-transform: uppercase !important;
-}
-.fw-bold {
-    font-weight: 700 !important;
-}
-.navbar-brand {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    text-decoration: none;
-    white-space: nowrap;
-}
-a {
-    color: #e6a756;
-    text-decoration: underline;
-}
-
-/* navbar toggle */
-
-.navbar-dark .navbar-toggler {
-    color: rgba(255, 255, 255, 0.55);
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    transition: box-shadow 0.15s ease-in-out;
-}
-
-
-
-.intro {
     position: relative;
+    margin-bottom: 20px;
 }
 
+#hero-image {
+    min-height: 100%;
+    width: 100%;
+    background: url('https://res.cloudinary.com/emmarubih/image/upload/v1668768963/Rubis/coffeehouse_uqh80x.jpg') no-repeat 95% 50%;
+    background-size: cover;
+    
 
-div {
-    display: block;
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
 }
 
-@media (min-width: 992px) {
-    .intro .intro-img {
-        width: 75%;
-        float: right;
+@keyframes hero-zoom {
+    from{
+        transform: scale(1.5);
     }
-
-}
-
-@media (min-width: 992px) {
-    .mb-lg-0 {
-        margin-bottom: 0 !important;
+    to{
+        transform: scale(1);
     }
 }
-.rounded {
-    border-radius: 0.25rem !important;
+
+#cover-page {
+    font-size: 100%;
+    
+    letter-spacing: 2px;
+
+    width: 350px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: #e3b578;
+    border-radius: 25px;
+
+    bottom: 250px;
+    left: 500px;
+
+    position: sticky
 }
+
+#cover-page, #cover-page h3 {
+    line-height: normal;
+}
+
+
+#cover-page, #cover-page h4 {
+    font-size: medium;
+    color: black;
+    font-style: oblique;
+    text-align: center;
+}
+
 
 /* booking page */
 
@@ -254,6 +135,25 @@ div {
 
 }
 
+/* footer*/
+#footer {
+    margin-top: 10px;
+}
+
+#footer .fa {
+    color: #be7438;
+    font-size: large;
+}
+
+i {
+    color: #be7438;
+    font-size: large;
+}
+
+.col-sm-4 {
+    text-align: center;
+}
+
 /* Media Quiries */ 
 @media screen and (max-width: 1300px) {
     .container{
@@ -271,7 +171,7 @@ div {
 }
 /* Media quiries for tablet sized screens */
 @media screen and (max-width: 950px) {
-    #cover-text {
+    #cover-page {
         bottom: 270px;
         right: 0px;
     }
@@ -290,7 +190,7 @@ div {
 /* Media queries for mobile */
 
 @media screen and (max-width:650px) {
-    #cover-text {
+    #cover-page {
         height: auto;
         padding-top: 10px;
     }
@@ -323,6 +223,16 @@ div {
 
     }
     
+}
+
+@media screen and (max-width:400px) {
+    .site-heading .site-heading-upper {
+        font-size: 1rem;
+    }
+
+    .site-heading .site-heading-lower {
+        font-size: 2rem;
+    }
 }
 
 /* Media Query for small mobile devices*/
