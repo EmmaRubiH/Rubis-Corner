@@ -95,11 +95,11 @@ body {
 
     padding-top: 40px;
     padding-left: 10px;
-    background-color: #e3b578;
-    border-radius: 25px;
+    background-color: rgb(190, 116, 56, .9);
+    border-radius: 5px;
 
     bottom: 250px;
-    left: 500px;
+    left: 100px;
 
     position: sticky
 }
@@ -146,12 +146,21 @@ body {
 }
 
 i {
-    color: #be7438;
+    color: rgb(190, 116, 56);
     font-size: large;
 }
 
 .col-sm-4 {
     text-align: center;
+}
+
+.footer {
+    
+    color: grey;
+}
+
+.footer i {
+    color: grey;
 }
 
 /* Media Quiries */ 

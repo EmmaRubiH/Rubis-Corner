@@ -76,7 +76,6 @@ TABLE_CHOICE = (
     ('Window', 'WINDOW'),
     ('Outside', 'OUTSIDE'),
     ('Inside', 'INSIDE'),
-    ('Booth', 'BOOTH'),
 )
 
 NUMBER_OF_PEOPLE_CHOICE = (
