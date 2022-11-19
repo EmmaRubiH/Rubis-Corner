@@ -51,6 +51,10 @@ body {
     color: whitesmoke;
 }
 
+li:hover {
+    border-bottom: 3px solid whitesmoke;
+}
+
 
 /* Start page/home*/
 
@@ -114,6 +118,50 @@ body {
     color: black;
     font-style: oblique;
     text-align: center;
+}
+
+/* Menu page */
+
+.picture {
+    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1668857432/Rubis/hd-wallpaper-ge36012827_1920_lfesp7.jpg');
+}
+
+.menu_container {
+    
+    text-align: center;
+    width: auto;
+    height: 600px;
+    padding-top: 40px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    
+}
+
+#check-out {
+    -webkit-text-stroke: 1px whitesmoke;
+color: black;
+    
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 300%;
+}
+
+button.btn.btn-secondary {
+    
+    color: whitesmoke;
+    
+}
+
+button.btn.btn-secondary:hover {
+    
+    background-color: #be7438;
+    
+}
+
+button.btn.btn-secondary i {
+    color: #35373C;
 }
 
 
