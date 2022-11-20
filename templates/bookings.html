@@ -17,16 +17,20 @@
 {% else %}
 {% if user.is_authenticated %}
 <section id="booking" class="book_a_table">
-    <div class="booking_container container h-100">
-        <div id="book-box" class="row justify-content-center align-self-center">
-            <div class="col-md-6 mt-5 mb-5 mx-auto">
-                <h4 class="stroke">Bookings:</h4>
-                <form method="POST">
-                    {% csrf_token %}
-                    {{form.as_p}}
+    
+       
+            <div class="row col-9 p-5 mx-auto">
+                <div class="cta-inner text-truncate rounded" style="background-color: whitesmoke;">
+                    <div class="col-md-6 mt-5 mb-5 mx-auto ">
+                        <h4 class="stroke">Book Your Table:</h4>
+                        <form method="POST">
+                            {% csrf_token %}
+                            {{form.as_p}}
 
-                    <button id="submit-button" class="btn btn-success">Book Now</button>
-                </form>
+                            <button id="submit-button" class="btn btn-success">Book Now</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

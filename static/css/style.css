@@ -56,74 +56,78 @@ li:hover {
 }
 
 
-/* Start page/home*/
+/* Home page */
 
-#hero-outer {
-    height: 600px;
+.container {
     width: 100%;
-    overflow: hidden; 
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
 
+.intro {
     position: relative;
-    margin-bottom: 20px;
 }
 
-#hero-image {
-    min-height: 100%;
-    width: 100%;
-    background: url('https://res.cloudinary.com/emmarubih/image/upload/v1668768963/Rubis/coffeehouse_uqh80x.jpg') no-repeat 95% 50%;
-    background-size: cover;
-    
-
-
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: backwards;
+@media (min-width: 992px) {
+.intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+}
 }
 
-@keyframes hero-zoom {
-    from{
-        transform: scale(1.5);
+div {
+    display: block;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+@media (min-width: 992px) {
+    .intro .intro-img {
+        width: 75%;
+        float: right;
     }
-    to{
-        transform: scale(1);
-    }
 }
 
-#cover-page {
-    font-size: 100%;
-    
-    letter-spacing: 2px;
-
-    width: 350px;
-    height: 200px;
-
-    padding-top: 40px;
-    padding-left: 10px;
-    background-color: rgb(190, 116, 56, .9);
-    border-radius: 5px;
-
-    bottom: 250px;
-    left: 100px;
-
-    position: sticky
+.section-heading {
+    text-transform: uppercase;
 }
 
-#cover-page, #cover-page h3 {
-    line-height: normal;
+h2, .h2 {
+    font-size: calc(1.325rem + 0.9vw);
 }
 
-
-#cover-page, #cover-page h4 {
-    font-size: medium;
-    color: black;
-    font-style: oblique;
-    text-align: center;
+p {
+    line-height: 1.75;
 }
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.bg-faded {
+    background-color: #E6AA6F;
+}
+
 
 /* Menu page */
 
 .picture {
-    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1668857432/Rubis/hd-wallpaper-ge36012827_1920_lfesp7.jpg');
+    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1668936708/Rubis/white-gecd8c9562_1920_nn4fmy.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .menu_container {
@@ -139,13 +143,15 @@ li:hover {
 }
 
 #check-out {
-    -webkit-text-stroke: 1px whitesmoke;
-color: black;
     
     font-weight: bold;
-    color: whitesmoke;
+    color: black;
     text-align: center;
     font-size: 300%;
+}
+
+h2 {
+    text-transform: uppercase;
 }
 
 button.btn.btn-secondary {
@@ -168,24 +174,33 @@ button.btn.btn-secondary i {
 /* booking page */
 
 .book_a_table {
-    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1668691179/Rubis/coffee-bild_tpy339.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #E6AA6F;
+    height: auto;
+
 }
 
 #book-box {
-    background-color: rgba(86, 48, 5, .4);
+    background-color: whitesmoke;
+    
 }
 
 .booking_container {
-    width: 800px;
-    height: auto;
+    width: 600px;
+    height: 500px;
 
+}
+
+.stroke {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4;
 }
 
 /* footer*/
 #footer {
     margin-top: 10px;
+    
 }
 
 #footer .fa {
