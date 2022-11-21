@@ -82,6 +82,11 @@ li:hover {
     position: absolute;
 }
 }
+.intro-img {
+    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1668768963/Rubis/coffeehouse_uqh80x.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 div {
     display: block;
@@ -184,11 +189,10 @@ button.btn.btn-secondary i {
     
 }
 
-.booking_container {
-    width: 600px;
-    height: 500px;
 
-}
+
+
+
 
 .stroke {
     text-transform: uppercase;
@@ -279,6 +283,7 @@ i {
 
     .booking_container {
         width: auto;
+        height: 400px;
         padding-left: 100px;
         padding-right: 85px;
     }
@@ -295,6 +300,7 @@ i {
 
     }
     
+    
 }
 
 @media screen and (max-width:400px) {
@@ -305,6 +311,7 @@ i {
     .site-heading .site-heading-lower {
         font-size: 2rem;
     }
+
 }
 
 /* Media Query for small mobile devices*/
@@ -321,5 +328,19 @@ i {
         padding-bottom: 40px;
 
     }
+
+    .booking_container {
+        width: auto;
+        height: 400px;
+        padding-left: 100px;
+        padding-right: 85px;
+    }
+
+    .cta-inner {
+        margin-top: 0;
+    }
+
+    
+    
 }
 

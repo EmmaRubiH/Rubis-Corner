@@ -4,11 +4,11 @@
 {% load crispy_forms_tags %}
 
 <section id="booking" class="book_a_table">
-    <div class="booking_container">
-        <div class="row">
-            <div class="col-md-3 mt-5 offset-md-3">
-                <div>
-                    <h5 class="stroke">Sign up now to receive our monthly newsletter</h5>
+   
+        <div class="row col-9 mx-auto">
+            <div class="cta-inner mt-5 mb-5 p-2 text-center rounded" style="background-color: whitesmoke;">
+                <div class="col-md-6 mx-auto ">
+                    <h5 class="stroke">Sign up for newsletter</h5>
                 </div>
                 <form method="POST">
                     {% csrf_token %}
