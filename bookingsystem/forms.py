@@ -86,3 +86,4 @@ class SignUpForm(ModelForm):
         model = SignUp
         # Tell the form to use all the fields provided
         fields = ('first_name', 'last_name', 'email_address')
+

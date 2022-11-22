@@ -66,9 +66,7 @@ class Booking(models.Model):
     phone = models.IntegerField(null=True, blank=True)
     number_of_people = models.CharField(max_length=2,
                                         choices=NUMBER_OF_PEOPLE_CHOICE,
-                                        blank=False, help_text='<br>Parties of'
-                                        '<br>more than 10,'
-                                        '<br>please call us on 021 4569 782')
+                                        blank=False)
     date = models.DateField()
     time = models.CharField(
         max_length=50, choices=TIME_CHOICE, blank=False
@@ -81,7 +79,7 @@ class Booking(models.Model):
         )
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
 
 class SignUp(models.Model):
@@ -94,4 +92,4 @@ class SignUp(models.Model):
     email_address = models.EmailField(null=True, blank=True)
 
     def __str__(self):
-        return self.first_name
+        return str(self.first_name)
