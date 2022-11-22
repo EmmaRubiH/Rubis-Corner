@@ -65,6 +65,7 @@ li:hover {
     margin-right: auto;
     margin-left: auto;
 }
+
 .page-section {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -75,13 +76,14 @@ li:hover {
 }
 
 @media (min-width: 992px) {
-.intro .intro-text {
-    left: 0;
-    width: 60%;
-    margin-top: 3rem;
-    position: absolute;
+    .intro .intro-text {
+        left: 0;
+        width: 60%;
+        margin-top: 3rem;
+        position: absolute;
+    }
 }
-}
+
 .intro-img {
     background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1668768963/Rubis/coffeehouse_uqh80x.jpg');
     background-size: cover;
@@ -299,6 +301,8 @@ i {
         padding-bottom: 75px;
 
     }
+
+    
     
     
 }
@@ -310,6 +314,11 @@ i {
 
     .site-heading .site-heading-lower {
         font-size: 2rem;
+    }
+
+    .intro-img {
+        width: 350px;
+        height: 240px;
     }
 
 }
@@ -339,6 +348,8 @@ i {
     .cta-inner {
         margin-top: 0;
     }
+
+    
 
     
     
