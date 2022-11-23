@@ -2,6 +2,20 @@
 
 body {
     font-family: 'Montserrat';
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1669194162/Rubis/hd-wallpaper-g599ba81cd_1920_wwdio9.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.main {
+    flex-grow: 1;
 }
 
 .site-heading {
@@ -85,7 +99,7 @@ li:hover {
 }
 
 .intro-img {
-    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1668768963/Rubis/coffeehouse_uqh80x.jpg');
+    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1669029518/Rubis/eric-parks-TsNwtbCih0M-unsplash_t5uh37.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -128,13 +142,20 @@ p {
     background-color: #E6AA6F;
 }
 
+/* info */
+
+.col-sm-3 {
+    color: whitesmoke;
+}
 
 /* Menu page */
 
 .picture {
     background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1668936708/Rubis/white-gecd8c9562_1920_nn4fmy.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    
 }
 
 .menu_container {
@@ -143,9 +164,8 @@ p {
     width: auto;
     height: 700px;
     padding-top: 40px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 1px;
+    
+    
     
 }
 
@@ -206,22 +226,9 @@ button.btn.btn-secondary i {
 }
 
 /* footer*/
-#footer {
-    
-    
-}
-#footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:20px;   /* Height of the footer */
-    background:#6cf;
- }
 
-#footer .fa {
-    color: #be7438;
-    font-size: large;
-}
+
+
 
 i {
     color: rgb(190, 116, 56);
@@ -233,8 +240,7 @@ i {
 }
 
 .footer {
-    
-    color: grey;
+    color: whitesmoke;
 }
 
 .footer i {
