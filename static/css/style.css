@@ -143,9 +143,25 @@ p {
 }
 
 /* info */
-
-.col-sm-3 {
+#bar {
     color: whitesmoke;
+}
+
+#bar1 {
+    font-family: 'Poiret One';
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.fab {
+    color: black;
+    font-size: 2rem;
+    
+
+}
+.list-inline-item {
+    cursor: none;
 }
 
 /* Menu page */
@@ -184,6 +200,7 @@ h2 {
 button.btn.btn-secondary {
     
     color: whitesmoke;
+    background-color: #35373C;
     
 }
 
@@ -194,7 +211,7 @@ button.btn.btn-secondary:hover {
 }
 
 button.btn.btn-secondary i {
-    color: #35373C;
+    color: whitesmoke;
 }
 
 
@@ -227,13 +244,6 @@ button.btn.btn-secondary i {
 
 /* footer*/
 
-
-
-
-i {
-    color: rgb(190, 116, 56);
-    font-size: large;
-}
 
 .col-sm-4 {
     text-align: center;
