@@ -16,12 +16,12 @@
 </section>
 {% else %}
 {% if user.is_authenticated %}
-<section id="booking" class="book_a_table">
+<section id="booking" class="book_a_table d-flex flex-wrap align-items-center">
     
        
-            <div class="row col-9 mx-auto">
-                <div class="cta-inner mt-5 p-3 text-center rounded" style="background-color: whitesmoke;">
-                    <div class="col-md-6 mx-auto ">
+            <div class="col-sm-6 mx-auto">
+                <div class="text-center mx-auto rounded" style="background-color: whitesmoke;">
+                    <div class="col-md-6 mx-auto p-2 ">
                         <h4 class="stroke">Book Your Table:</h4>
                         <form method="POST">
                             {% csrf_token %}
