@@ -59,9 +59,7 @@ body {
     
 }
 
-.modal-dialog {
-    margin: 20vh auto 0px auto
-}
+
 
 /* navbar */
 
@@ -233,7 +231,9 @@ button.btn.btn-secondary i {
     
 }
 
-
+.active {
+    background-color: #be7438;
+}
 .cta-inner {
     letter-spacing: 2px;
 

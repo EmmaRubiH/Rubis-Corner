@@ -161,49 +161,7 @@
         </div>
         </div>
         </div>
-            <!-- <div class="row p-4 justify-content-around text-center" style="background-color: rgb(53, 55, 60, .8);">
-                <div class="col-sm-3 p-3 rounded " style="background-color: #35373C;">
-                    <h5 class="uppercase general-sub"><i class="fa fa-map-pin" aria-hidden="true"></i>&nbsp;Adress:</h5>
-                    <p class="inline-block">Hinkie tank street,
-                        Pree City,
-                        PREE
-                    </p>
-                    <h5 class="uppercase general-sub"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Phone:</h5>
-                    <p class="inline-block">05000 975 432
-                    </p>
-                    <h5 class="uppercase general-sub"><i class="fa fa-at" aria-hidden="true"></i>&nbsp;Email:</h5>
-                    <p class="inline-block">info@rubiscorner.ou
-                    </p>
-                </div>
-                <div class="col-sm-3 pt-5 rounded" style="background-color: #35373C;">
-                    <h5 class="uppercase general-sub"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp;Opening Hours:</h5>
-                    <p class="inline-block pt-3">
-                        Monday - Sunday
-                    </p>
-                    <p class="inline-block">
-                        11:00 - 22:00
-                    </p>
-                </div>
-                <div class="col-sm-3 pt-5 rounded" style="background-color: #35373C;">
-                    <h5 class="uppercase general-sub">Social Networks:</h5>
-                    <ul class="list-inline social-links">
-                        <li class="list-inline-item p-3">
-                            <a target="_blank" href="https://www.facebook.com">
-                                <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
-
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.instagram.com">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                                <span class="sr-only">Instagram</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
+           
 
                 <footer class="footer mt-auto py-3 dark-bg" style="background-color: #35373C;">
                     <p class="m-0 text-center small">
@@ -220,6 +178,12 @@
             let alert = new bootstrap.Alert(messages);
             alert.close();
         }, 4000);
+    </script>
+    <script>
+        $('.nav-link').click(function() {
+            $('.nav-link').removeClass('active');
+            $(this).addClass('active');
+        })
     </script>
     <!-- Imported scripts from bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

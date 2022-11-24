@@ -7,10 +7,10 @@
 
 {% block content %}
 
-<section id="login" class="login-image">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 mt-5 offset-md-3">
+<section id="login" class="book_a_table d-flex flex-wrap align-items-center" style="background-color: rgb(230, 170, 111, 0.9);">
+    <div class="col-sm-6 mx-auto" style="background-color: whitesmoke;">
+        <div class="text-center mx-auto rounded">
+            <div class="col-md-6 mx-auto p-3">
                 <h2>{% trans "Log In" %}</h2>
 
                 <p>{% blocktrans %}Don't have any account? click
@@ -18,8 +18,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-3 mb-5 offset-md-3">
+        <div class="text-center mx-auto rounded">
+            <div class="col-md-6 mx-auto p-3">
                 <form class="login" method="POST" action="{% url 'account_login' %}">
                     {% csrf_token %}
                     {{ form.as_p }}
