@@ -3,9 +3,37 @@
 {% block content %}
 
 <section id="menu" class="picture">
-  <div class="menu_container row ">
+  <div class="menu_container row justify-content-around">
     <h2 id="check-out">Look at our menus</h2>
-    <p class="p-4">
+    <h4 class="text-uppercase" >Click on the image</h4>
+    <p class="col-sm-4 p-5">
+
+
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Food Menu <img src="https://res.cloudinary.com/emmarubih/image/upload/v1669286644/Rubis/blueberries-g0fd26ae39_1920_g54riu.jpg" width="200" /></button>
+    </p>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="https://res.cloudinary.com/emmarubih/image/upload/v1669283993/Rubis/Ska%CC%88rmavbild_2022-11-24_kl._10.59.20_cnq4sf.png" class="img-thumbnail">
+        </div>
+    </div>
+  </div>
+</div>
+
+<p class="col-sm-4 p-5">
+  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">Drink menu <img src="https://res.cloudinary.com/emmarubih/image/upload/v1669288420/Rubis/drink-g9a64933ed_1920_mrj0qm.jpg" width="200"></button>
+  </p>
+<div id="myModal2" class="modal fade" tabindex="-1" role="dialog">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-body">
+          <img src="https://res.cloudinary.com/emmarubih/image/upload/v1669283976/Rubis/Ska%CC%88rmavbild_2022-11-24_kl._10.59.03_n4k7gd.png" class="img-thumbnail">
+      </div>
+  </div>
+</div>
+</div>
+    <!-- <p class="p-4">
       <button class="btn btn-secondary d-block" type="button" data-toggle="collapse"
         data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Food
         Menu &nbsp; <i class="fas fa-utensils"></i></button>
@@ -47,8 +75,9 @@
         <p>CAFFÈ LATTE</p>
         <p>CAPPUCCINO</p>
       </div>
-    </div>
+    </div> -->
   </div>
+  
 
 
 </section>
