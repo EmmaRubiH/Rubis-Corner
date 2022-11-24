@@ -59,7 +59,10 @@ body {
     
 }
 
-
+.active {
+    background-color: #be7438;
+    color: aqua;
+}
 
 /* navbar */
 
