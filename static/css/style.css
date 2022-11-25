@@ -2,11 +2,11 @@
 
 body {
     font-family: 'Montserrat';
-    min-height: 100vh;
+    min-height: 100%;
+    
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+    
+    
     background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1669194162/Rubis/hd-wallpaper-g599ba81cd_1920_wwdio9.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -60,19 +60,18 @@ body {
 }
 
 .active {
-    background-color: #be7438;
-    color: aqua;
+    background-color: #494C53;
+    color: white;
+    
 }
 
 /* navbar */
 
-#navbar {
-    color: whitesmoke;
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: 800;
 }
 
-li:hover {
-    border-bottom: 3px solid whitesmoke;
-}
 
 
 /* Home page */
@@ -172,7 +171,7 @@ p {
 /* Menu page */
 
 .picture {
-    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1668936708/Rubis/white-gecd8c9562_1920_nn4fmy.jpg');
+    background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1669366419/Rubis/pancakes-g7d1827466_1920_ouuasy.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,9 +192,9 @@ p {
 #check-out {
     
     font-weight: bold;
-    color: black;
+    color: whitesmoke;
     text-align: center;
-    font-size: 300%;
+    font-size: 250%;
 }
 
 h2 {
@@ -234,9 +233,6 @@ button.btn.btn-secondary i {
     
 }
 
-.active {
-    background-color: #be7438;
-}
 .cta-inner {
     letter-spacing: 2px;
 

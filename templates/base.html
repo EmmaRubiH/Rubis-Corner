@@ -4,6 +4,11 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Cafe's website, where you can find our current menus & make reservations.">
     <title> Rubi's Corner </title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poiret+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -21,7 +26,7 @@
     
 </head>
 
-<body class="d-flex flex-column h-100 main-bg">
+<body class="">
     <header>
         <h1 class="site-heading text-center text-faded">
             <span class="site-heading-upper">Welcome to enjoy a good meal</span>
@@ -38,35 +43,35 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 
-                <li class="nav-item {% active_link 'bookingsystem:home' 'active' %}">
+                <li class="nav-item m-2 rounded {% active_link 'bookingsystem:home' 'active' %}" style="background-color: rgb(190, 116, 56, 0.6);">
                     <a class="nav-link" href="{% url 'bookingsystem:home' %}">Home</a>
                 </li>
                 
-                <li class="nav-item {% active_link 'bookingsystem:menus' 'active' %}">
+                <li class="nav-item m-2 rounded {% active_link 'bookingsystem:menus' 'active' %}">
                     <a class="nav-link" href="{% url 'bookingsystem:menus' %}">Menus</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item m-2 rounded {% active_link 'bookingsystem:bookings' 'active' %}">
                     <a class="nav-link" href="{% url 'bookingsystem:bookings' %}">Book a Table</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item m-2 rounded {% active_link 'bookingsystem:sign_up' 'active' %}">
                     <a class="nav-link" href="{% url 'bookingsystem:sign_up' %}">Newsletter</a>
                 </li>
                 <!--The My Bookings and Log out tabs will only appear
                 if the an autherised user is logged in -->
                 {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'bookingsystem:my_bookings' %}">My Bookings</a>
+                <li class="nav-item m-2 rounded {% active_link 'bookingsystem:my_bookings' 'active' %}">
+                    <a class="nav-link" href="{% url 'bookingsystem:my_bookings' %}">My Bookings</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'account_logout' %}">Logout</a>
+                <li class="nav-item m-2 rounded {% active_link 'account_logout' 'active' %}">
+                    <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                 </li>
                 <!--Otherwise they will be asked to either
                 log in or register -->
                 {% else %}
-                <li class="nav-item">
+                <li class="nav-item m-2 rounded {% active_link 'account_signup' 'active' %}">
                     <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item m-2 rounded {% active_link 'account_login' 'active' %}">
                     <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                 </li>
                 {% endif %}
@@ -181,9 +186,7 @@
             alert.close();
         }, 4000);
     </script>
-    <script>
-        
-    </script>
+    
     <!-- Imported scripts from bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
