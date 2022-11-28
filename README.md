@@ -2,8 +2,9 @@
 
 This is a cafe website designed to display menus to costumers and allow them to make, edit and delete reservations. It's a full-stack framework project built using HTML, CSS, Python, Django and javaScript.
 
-## UX
-### Strategy
+---
+# UX
+## Strategy:
 
 Using the core UX principles i first started with strategy. Thinking about what the user will be looking for in the Cafe.
 
@@ -15,7 +16,8 @@ The users will be looking for:
 * An user account to log in in to make reservations
 * Allow users to sign up for a newsletter
 
-### User Stories
+---
+## User Stories:
 
 Follow the link to find my defined user stories and their criterias [here](https://github.com/EmmaRubiH/Rubis-Corner/issues).
 
@@ -30,7 +32,8 @@ Follow the link to find my defined user stories and their criterias [here](https
 9. As a user I can see message on the site when i havesuccess with log in/sign up. 
 10. As a admin user I can **log in ** so that I can access the site's backend.
 
-### Scope
+---
+## Scope:
 
 * Landing page with information about the cafe.
 * Menu page, with buttons to view food and drinks menu.
@@ -39,7 +42,8 @@ Follow the link to find my defined user stories and their criterias [here](https
 * Register/login using Django allauth.
 * Contact info and opening hours.
 
-### Structure
+---
+## Structure:
 
 The information above was then used to create a structure for the website.
 The site map showing how users can navigate the website intuitively.
@@ -51,47 +55,110 @@ The site map showing how users can navigate the website intuitively.
 
 </details>
 
-### Skeleton
+---
+## Skeleton:
 
 Wireframes were created to set the appereance of the website. Created them using Balsamiq.
 
 The finish project is different from the original mockup. 
 
----
+
 <details><summary>Home Page Idea</summary>
 
 ![Home Page Idea](/static/media/startidee.png)
 
 </details>
 
----
+
 <details><summary>Menu Page Idea</summary>
 
 ![Menu Page Idea](/static/media/menuidee.png)
 
 </details>
 
----
+
 <details><summary>Book A Table Page Idea</summary>
 
 ![booking Page Idea](/static/media/bookingidee.png)
 
 </details>
 
----
+
 <details><summary>Home Page Idea</summary>
 
 ![Home Page Idea](/static/media/startidee.png)
 
 </details>
 
----
+<br>
 
-### Surface
+### Surface:
 
 You can see the live site here
 
-## Color
+---
+
+## Color:
+
+The colour palette i chose for this website was grey, white and yellow. I wanted a 'clean' feel and based it on grey to keep in theme with rubis Corner. Corners of a building can usually be concrete material. I wanted the feeling of the name to follow through with the coloring and the theme in the website.
+While building the site i felt that the feeling could be a little dark, so i chose to add yellow to brighten it upp and feeling could be softer.
+
+And text colours is black and whitesmoke troughout the site.
+
+![coolers](/static/media/coolors.png)
+
+## Font:
+For fonts i chose 'Poiret One' and 'Montserrat'.
+
+## Images:
+all the images where taken from [Pixabay](https://pixabay.com/sv/).
+
+---
+<br>
+
+# Features
+There are several features on this site to help users get the most out of their visit to the website.
+
+## General:
+
+<details><summary>Header and Nav Bar</summary>
+
+![Header and Nav Bar](/static/media/HeaderNav.png)
+
+</details>
+
+<br>
+
+Each page has a header and Navigation bar section, located at the top of the page. The navigation bar consisted of links to Home, Menus, Book a table, Nevsletter and Login page.
+
+## Footer
+
+<details><summary>Footer Info</summary>
+
+![Footer](/static/media/HeaderNav.png)
+
+</details>
+
+<br>
+
+Each page contains a footer white same information. Social media accounts (Facebook and Instagram), Opening Hours and contact info.
+
+---
+
+# Future Featurs:
+
+Some features i would like for this app are:
+
+* Avoid overbookings.
+* Newsletter mail. After the user have sign up for newsletter, an email should bee send with information.
+* Confirmation email. An email that send to the user after they have make a booking, edit or cancelled the reservation.
+
+
+
+
+
+
+
 
 
 
