@@ -143,9 +143,9 @@ Each page has a header and Navigation bar section, located at the top of the pag
 
 Each page contains a footer white same information. Social media accounts (Facebook and Instagram), Opening Hours and contact info.
 
----
 
-# Future Featurs:
+
+## Future Featurs:
 
 Some features i would like for this app are:
 
@@ -153,20 +153,16 @@ Some features i would like for this app are:
 * Newsletter mail. After the user have sign up for newsletter, an email should bee send with information.
 * Confirmation email. An email that send to the user after they have make a booking, edit or cancelled the reservation.
 
+---
+<br>
 
+# Testing
+lll
 
+---
+<br>
 
-
-
-
-
-
-
-
-
-
-
-## Bugs:
+# Bugs
 
 1. Had problems loading all the styling on the base.html page.
   * I hade not write the right code to the url link {% static 'css/style.css' %}. (i forgot the css)

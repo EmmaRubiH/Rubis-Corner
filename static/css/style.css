@@ -57,18 +57,18 @@ body {
     font-weight: 50;
     line-height: 4rem;
     font-family: 'Poiret One';
-    color: black;
+    color: #000000;
 }
 
 .active {
     background-color: #494C53;
-    color: white;
+    color: #ffffff;
 }
 
 /* navbar */
 
 .navbar-nav .nav-item .nav-link {
-    color: white;
+    color: #ffffff;
     font-weight: 800;
 }
 
@@ -151,7 +151,7 @@ p {
 
 /* info */
 #bar {
-    color: whitesmoke;
+    color: #f5f5f5;
 }
 
 #bar1 {
@@ -162,7 +162,7 @@ p {
 }
 
 .fab {
-    color: black;
+    color: #000000;
     font-size: 2rem;
 }
 
@@ -188,7 +188,7 @@ p {
 
 #check-out {
     font-weight: bold;
-    color: whitesmoke;
+    color: #f5f5f5;
     text-align: center;
     font-size: 250%;
 }
@@ -198,7 +198,7 @@ h2 {
 }
 
 button.btn.btn-secondary {
-    color: whitesmoke;
+    color: #f5f5f5;
     background-color: #35373C;
 }
 
@@ -207,18 +207,39 @@ button.btn.btn-secondary:hover {
 }
 
 button.btn.btn-secondary i {
-    color: whitesmoke;
+    color: #f5f5f5;
 }
 
 /* booking page */
 
+
 .book_a_table {
-    background-color: #E6AA6F;
+    /* background-color: #E6AA6F; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
     height: 700px;
 }
 
+.book_a_table:before {
+    content: "";
+  background-image: url('https://res.cloudinary.com/emmarubih/image/upload/v1669633371/Rubis/coffee-g3c09a4f46_1920_f41ket.jpg');
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .7;
+}
+
+
 #book-box {
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
+    
 }
 
 .cta-inner {
@@ -239,11 +260,11 @@ button.btn.btn-secondary i {
 }
 
 .footer {
-    color: whitesmoke;
+    color: #f5f5f5;
 }
 
 .footer i {
-    color: grey;
+    color: #808080;
 }
 
 /* Media Quiries */
@@ -310,8 +331,9 @@ button.btn.btn-secondary i {
     }
 
     .menu_container {
-        padding-top: 0px;
+        padding-top: 2px;
         padding-bottom: 75px;
+        font-size: small;
 
     }
 }
@@ -329,6 +351,9 @@ button.btn.btn-secondary i {
         width: 350px;
         height: 240px;
     }
+    .menu_container {
+        font-size: xx-small;
+    }
 
 }
 
@@ -345,6 +370,7 @@ button.btn.btn-secondary i {
 
     .menu_container {
         padding-bottom: 40px;
+        font-size: xx-small;
 
     }
 

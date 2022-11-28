@@ -97,11 +97,37 @@
     </main>
     <!-- Footer -->
     <div id="bar" class="row no-gutters p-5" style="background-color: rgb(53, 55, 60, .8);">
-        <h3 id="bar1" class="uppercase bold">Get in touch</h3>
-        <h6 class="uppercase">Hey! If you want to contact us</h6>
-        <p> Etiam sit amet convallis erat class aptent taciti sociosqu ad litora torquent per conubia! Maecenas
-            gravida lacus. Lorem etiam sit amet convallis era</p>
-        <h5 class="text-uppercase general-sub">Opening Hours:</h5>
+        <h3 id="bar1" class="uppercase bold"> Get in touch</h3>
+        <p class="inline-block">
+            <h6 class="uppercase">If you want to contact us, click on the button to get info</h6>
+            <button class="btn btn-secondary d-block m-2" type="button" data-toggle="modal" data-target="#contactus"
+                aria-expanded="false" aria-controls="contactus" style="width: auto;">
+                Contact Us &nbsp; <i class="fas fa-sort-down"></i></button>
+        </p>
+       
+        <div class="modal fade" id="contactus">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body" style="color: black;">
+
+                        <h5 class="text-uppercase general-sub">&nbsp;Adress:</h5>
+                        <p class="inline-block">Hinkie tank street,
+                            Pree City,
+                            PREE
+                        </p>
+                        <h5 class="text-uppercase general-sub">&nbsp;Phone:</h5>
+                        <p class="inline-block">05000 975 432
+                        </p>
+                        <h5 class="text-uppercase general-sub">&nbsp;Email:</h5>
+                        <p class="inline-block">info@rubiscorner.ou
+                        </p>
+                    </div>
+                    </div>
+                    </div>
+
+                    </div>
+    
+        <h5 class="text-uppercase general-sub"><u> Opening Hours: </u></h5>
         <p class="inline-block">
             Monday - Sunday
         </p>
@@ -110,7 +136,7 @@
         </p>
         <div class="social">
             <ul class="list-inline social-links">
-                <li class="list-inline-item p-3">
+                <li class="list-inline-item">
                     <a target="_blank" href="https://www.facebook.com">
                         <i class="fab fa-facebook-square" aria-hidden="true"></i>
                         <span class="sr-only">Facebook</span>
@@ -123,32 +149,7 @@
                     </a>
                 </li>
             </ul>
-                <p>
-                    <button class="btn btn-secondary d-block" type="button" data-toggle="modal" data-target="#contactus"
-                        aria-expanded="false" aria-controls="contactus">
-                        Contact Us &nbsp; <i class="fas fa-sort-down"></i></button>
-                </p>
-                <div class="modal fade" id="contactus">
-                    <div class="modal-dialog  modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-body" style="color: black;">
-
-                                <h5 class="text-uppercase general-sub">&nbsp;Adress:</h5>
-                                <p class="inline-block">Hinkie tank street,
-                                    Pree City,
-                                    PREE
-                                </p>
-                                <h5 class="text-uppercase general-sub">&nbsp;Phone:</h5>
-                                <p class="inline-block">05000 975 432
-                                </p>
-                                <h5 class="text-uppercase general-sub">&nbsp;Email:</h5>
-                                <p class="inline-block">info@rubiscorner.ou
-                                </p>
-                            </div>
-                            </div>
-                            </div>
-
-                            </div>
+                
                             </div>
                             </div>
     <footer class="footer mt-auto py-3 dark-bg" style="background-color: #35373C;">
