@@ -65,6 +65,10 @@ body {
     color: #ffffff;
 }
 
+a {
+    color: black;
+}
+
 /* navbar */
 
 .navbar-nav .nav-item .nav-link {
@@ -248,9 +252,10 @@ button.btn.btn-secondary i {
 
 .stroke {
     text-transform: uppercase;
-    font-weight: bold;
+    
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
+    padding: 10px;
 }
 
 /* footer*/
@@ -289,10 +294,6 @@ button.btn.btn-secondary i {
         right: 0px;
     }
 
-    .login_container {
-        width: auto;
-    }
-
     .menu_container {
         height: auto;
 
@@ -305,12 +306,6 @@ button.btn.btn-secondary i {
     #cover-page {
         height: auto;
         padding-top: 10px;
-    }
-
-    .login_container {
-        height: auto;
-        padding-left: 65px;
-        padding-top: 50px;
     }
 
     .container {
@@ -383,5 +378,9 @@ button.btn.btn-secondary i {
 
     .cta-inner {
         margin-top: 0;
+    }
+
+    .stroke {
+        font-size: 1rem;
     }
 }

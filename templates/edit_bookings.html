@@ -4,10 +4,10 @@
 
 {% load crispy_forms_tags %}
 
-<section id="booking" class="book_a_table p-3">
-    <div class="booking_container">
-        <div class="row">
-            <div class="col-md-3 mt-5 offset-md-3">
+<section id="booking" class="book_a_table d-flex flex-wrap align-items-center p-3">
+    <div class="col-sm-6 mx-auto" style="background-color: whitesmoke;">
+        <div class="text-center mx-auto rounded">
+            <div class="col-md-6 mx-auto p-2">
                 <h4 class="stroke">Edit Booking:</h4>
                 <form method="POST">
                     {% csrf_token %}

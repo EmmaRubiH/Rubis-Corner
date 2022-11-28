@@ -135,7 +135,7 @@ Each page has a header and Navigation bar section, located at the top of the pag
 
 <details><summary>Footer Info</summary>
 
-![Footer](/static/media/HeaderNav.png)
+![Footer](/static/media/footer.png)
 
 </details>
 

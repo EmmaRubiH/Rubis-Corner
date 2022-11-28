@@ -2,14 +2,14 @@
 
 {% block content %}
 
-<section id="booking" class="book_a_table p-3">
-    <div class="my_bookings_container rounded p-1" style="background-color: whitesmoke;">
-        <h2 class="stroke p-4">My Bookings:</h2>
+<section id="booking" class="book_a_table d-flex flex-wrap align-items-center p-3">
+    <div class="col-sm-6 mx-auto rounded" style="background-color: whitesmoke;">
+        <h2 class="stroke">My Bookings:</h2>
         <p class="stroke">Edit or cancel a
             booking click on the buttons below.</p>
-        <div class="row justify-content-center">
+        <div class="text-center mx-auto">
             {% for booking in bookings %}
-            <div class="col-md-5">
+            <div class="col-md-6 mx-auto p-2">
                 <div class="card mb-5">
                     <div class="card-body">
                         <h5 class='card-title text-uppercase text-center'>{{ booking.name }}</h5>
