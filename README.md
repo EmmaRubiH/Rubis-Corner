@@ -504,7 +504,7 @@ Settings.py templates:
 
 # Acknowledgements 
 
-- I would like to thank my mentor Jubril for good feedback and support for this project.
+- I would like to thank my mentor Jubril Akolade for good feedback and support for this project.
 
 - Thanks to Slack community
 
