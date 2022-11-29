@@ -17,9 +17,6 @@ class OnlineForm(ModelForm):
     This form is connected with the view
     in order to provide users with the neccessary
     fields for making a booking
-    It also provides the labels and placeholder
-    text for each field, as wells as the widgets
-    and handles validation where required.
     """
     name = forms.CharField(
         label='Booking Name',
@@ -52,32 +49,34 @@ class OnlineForm(ModelForm):
         }
 
 
+
+
 class SignUpForm(ModelForm):
     """
     This form is connected with the Signup view
     so that visiters to the site can sign up
     for the restaurants newsletter.
-    It also provides the labels and placeholder
-    text for each field, as wells as the widgets
-    and handles validation where required.
     """
 
     first_name = forms.CharField(
         label='First Name',
         required=True,
         widget=forms.TextInput(attrs={'placeholder': 'First Name'}),
+       
     )
 
     last_name = forms.CharField(
         label='Last Name',
         required=True,
         widget=forms.TextInput(attrs={'placeholder': 'Last Name'}),
+     
     )
 
     email_address = forms.EmailField(
         label='Email Adress',
         required=True,
         widget=forms.TextInput(attrs={'placeholder': 'Email Adress'}),
+
     )
 
     class Meta:
@@ -86,3 +85,5 @@ class SignUpForm(ModelForm):
         model = SignUp
         # Tell the form to use all the fields provided
         fields = ('first_name', 'last_name', 'email_address')
+
+

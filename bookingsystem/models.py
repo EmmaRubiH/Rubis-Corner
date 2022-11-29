@@ -87,9 +87,9 @@ class SignUp(models.Model):
     Model to be used in the forms.py for the sign up to newsletter.
     """
 
-    first_name = models.CharField(max_length=60, null=True, blank=True)
-    last_name = models.CharField(max_length=60, null=True, blank=True)
-    email_address = models.EmailField(null=True, blank=True)
+    first_name = models.CharField(max_length=60, null=True, blank=False)
+    last_name = models.CharField(max_length=60, null=True, blank=False)
+    email_address = models.EmailField(null=True, blank=False)
 
     def __str__(self):
         return str(self.first_name)

@@ -4,6 +4,8 @@
 
 This is a cafe website designed to display menus to costumers and allow them to make, edit and delete reservations. It's a full-stack framework project built using HTML, CSS, Python, Django and javaScript.
 
+
+[Live site here](https://rubiscorner.herokuapp.com/)
 ---
 
 # Table of Content:
@@ -115,7 +117,7 @@ The finished project is different from the original mockup.
 
 ### Surface:
 
-You can see the live site here
+You can see the live site [here](https://rubiscorner.herokuapp.com/)
 
 ---
 
