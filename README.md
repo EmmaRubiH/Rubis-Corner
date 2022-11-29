@@ -5,6 +5,25 @@
 This is a cafe website designed to display menus to costumers and allow them to make, edit and delete reservations. It's a full-stack framework project built using HTML, CSS, Python, Django and javaScript.
 
 ---
+
+# Table of Content:
+
+1. [UX](#ux)
+   - [Strategy](#strategy)
+   - [User Stories](#user-stories)
+   - [Scope](#scope)
+   - [Structure](#structure)
+   - [Skeleton](#skeleton)
+   - [color](#color)
+   - [Font an Image](#font)
+2. [Features](#features)
+3. [Bugs](#bugs)
+4. [Technologies Used](#technologies-used)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
+8. [Acknowledgements](#acknowledgements)
+
 # UX
 ## Strategy:
 
@@ -325,6 +344,10 @@ Some features i would like for this app are:
 
 # Testing
 
+## Manual Testing:
+
+I have tested this project manually myself and have also had it tested by friends and family on multiple devices and screen sizes.
+
 ## Code Validation:
 
 - [W3C Markup Validation Service](https://validator.w3.org/) - Used to validate all HTML
@@ -361,6 +384,104 @@ Some features i would like for this app are:
 
 ---
 
+# Deployment
+
+## Database:
+
+<details><summary>ElephantSQL Steps</summary>
+
+ElephantSQL:
+
+- To create a managed postgres datasbase go to ElephantSQL and Signup/Signin to your account.
+
+- Name your database, choose the 'Tiny Turtle' payment plan and click 'Select Region'.
+
+- Choose your region and then create the database.
+ instance.
+
+- In the instances page, click the name of your chosen database.
+
+- In the details section of the following page copy the postgres url.
+
+- You can now use this URL when linking the database to the project's GitHub repository.
+
+</details>
+
+## Deploying to Heroku:
+
+<details><summary>Heroku steps</summary>
+
+- Signup/Signin to heroku.
+
+- Create a new app from the Heroku dashboard.
+
+- Give the app a unique name and enter the region of operation then click 'create app'.
+
+- From your newly created app choose the settings tab and navigate to 'Reveal Config Vars'.
+
+- Paste the ElephantSQL Database url into the DATABASE_URL environment variable.
+
+- Create an env.py file in the root directory of your Django project. (At the same directory level as requirements.txt and manage.py)
+
+env.py:
+- Paste the ElephantSQL url for the DATABASE_URL value.
+
+- Add the following libraries to the settings.py file: Import Path from pathlib, dj_database_url and os.
+
+Settings.py:
+- Create a secret key to replace the insecure SECRET_KEY variable in the settings.py file. Link the secure key in env.py to the settings.py SECRET_KEY variable with the following code: SECRET_KEY = os.environ.get('SECRET_KEY')
+
+- Add your secret key to HEROKU Config Vars.
+
+- Link the DATABASES value to the env.py file with the following code: DATABASES = { 'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
+
+- You can now migrate the app models to the new database using the command: "python3 manage.py makemigrations" then Python3 manage.py migrate.
+
+</details>
+
+## Cloudinary:
+
+<details><summary>Cloudinary steps</summary>
+
+- Signup/signin to Cloudinary
+
+- Copy the 'cloudinary url' from your account dashboard and paste it as the CLOUDINARY_URL value in env.py.
+
+- Add the CLOUDINARY_URL to the Config Vars in Heroku.
+
+- Also Add the DISABLE_COLLECTSTATIC Key with the value of 1
+
+- Change the static file settings in Django by altering the following.
+
+  * The STATIC_URL
+
+  * STATICFILES_STORAGE
+
+  * STATICFILES_DIRS
+  * STATIC_ROOT
+  * MEDIA URL
+  * DEFAULT_FILE_STORAGE
+
+Settings.py templates:
+
+- Back nearer the top of the settings.py file add the Setting TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+
+- Create 3 new folders for static files, media files and HTML templates. (At the same directory level as requirements.txt and manage.py.)
+
+- Create a Procfile(capital P) and add the following: web: gunicorn NAME_OF_THE_APP_GOES_HERE.wsgi
+
+- Add the app name and herokuapp.com to the list of ALLOWED_HOSTS.
+
+- Add and commit the changes to GitHub.
+
+- Remove DISABLE_COLLECTSTATIC from Heroku Config Vars
+
+- Deploy via the 'Deploy Main Branch' button in the Deployment page of HEROKU.
+
+- If you recieve an success message, you can click the link provided to view the app in the web browser.
+
+</details>
+
 # Credits
 
 - The initial setup of the Django project was done following the Code Institutes walkthrough project.
@@ -370,6 +491,10 @@ Some features i would like for this app are:
 - Django Docs
 
 - Bootstrap
+
+- Crispy Forms
+
+- Django Allauth
 
 - [Active_link](https://pypi.org/project/django-active-link/) - To make links active in navbar.
 
@@ -383,3 +508,6 @@ Some features i would like for this app are:
 
 - I would like to thank my friends and family for their valued opinions and critic during the process of design and development.
 
+---
+
+[Back to top](#table-of-content)
