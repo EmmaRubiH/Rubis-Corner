@@ -49,8 +49,6 @@ class OnlineForm(ModelForm):
         }
 
 
-
-
 class SignUpForm(ModelForm):
     """
     This form is connected with the Signup view
@@ -62,14 +60,14 @@ class SignUpForm(ModelForm):
         label='First Name',
         required=True,
         widget=forms.TextInput(attrs={'placeholder': 'First Name'}),
-       
+
     )
 
     last_name = forms.CharField(
         label='Last Name',
         required=True,
         widget=forms.TextInput(attrs={'placeholder': 'Last Name'}),
-     
+
     )
 
     email_address = forms.EmailField(
@@ -85,5 +83,3 @@ class SignUpForm(ModelForm):
         model = SignUp
         # Tell the form to use all the fields provided
         fields = ('first_name', 'last_name', 'email_address')
-
-
