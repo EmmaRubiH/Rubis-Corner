@@ -26,7 +26,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('bookingsystem.urls')),
     path(
-        "favicon.ico",
-        RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),
+        "favicon-32x32.png",
+        RedirectView.as_view(url=staticfiles_storage.url("favicon-32x32.png")),
     ),
 ]
