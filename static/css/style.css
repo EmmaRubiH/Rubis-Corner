@@ -246,15 +246,11 @@ button.btn.btn-secondary i {
     
 }
 
-.cta-inner {
-    letter-spacing: 2px;
-}
 
 .stroke {
     text-transform: uppercase;
     
     text-align: center;
-    letter-spacing: 1px;
     padding: 10px;
 }
 
@@ -312,13 +308,6 @@ button.btn.btn-secondary i {
         padding-left: 0px;
     }
 
-    .booking_container {
-        width: auto;
-        height: 400px;
-        padding-left: 100px;
-        padding-right: 85px;
-    }
-
     .my_bookings_container {
         width: auto;
         padding-left: 50px;
@@ -367,17 +356,6 @@ button.btn.btn-secondary i {
         padding-bottom: 40px;
         font-size: xx-small;
 
-    }
-
-    .booking_container {
-        width: auto;
-        height: 400px;
-        padding-left: 100px;
-        padding-right: 85px;
-    }
-
-    .cta-inner {
-        margin-top: 0;
     }
 
     .stroke {

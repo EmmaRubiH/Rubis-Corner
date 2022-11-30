@@ -301,6 +301,12 @@ Some features i would like for this app are:
   * I did everything thoroughly one more time, then I realized that I had not saved the right URL from ElephantSQL.
   * When I now do everything the right way, it worked.
 
+5. Field Validation/ whitespaces
+  * I hade some problems with the whitespaces in my field validation. I wanted it to be an error message when a user try to login/sign up. 
+  * Search allot, but for django it wasn't so much info as a would hope. I now i could do the Trim() funktion. but that would be to easy.
+  * I ask my mentor for help. and we search togetter for and answer. And we finally figure it out. And it was a mistake I had done in my codes.
+  * I tought that a code should me in the forms.py. but instead it should be in the models.py. And yes there I had write wrong codes from the start that I had forgotten about. some of the model charfields i hade set the blank=true by mistake. So an easy way now to change the blanks to false.
+
 ---
 # Technologies Used
 
@@ -349,6 +355,16 @@ Some features i would like for this app are:
 ## Manual Testing:
 
 I have tested this project manually myself and have also had it tested by friends and family on multiple devices and screen sizes.
+
+- Test that Nav links work.
+- Test that the footer and Social links work.
+- Test that menu button work.
+- Test that booking page work. to make a reservation.
+- Test that user can register, login and logout.
+- Test that user can sign up for a newsletter.
+- test that user can manage booking by edit and delete.
+- Test that the all of the pages are responsive on large medium ans small screens.
+
 
 ## Code Validation:
 
